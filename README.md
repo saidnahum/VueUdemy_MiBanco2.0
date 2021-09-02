@@ -1,4 +1,4 @@
-# 01-holamundo-v2
+# Mi Banco 2.0
 
 ## Project setup
 ```
