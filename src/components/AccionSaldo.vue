@@ -1,16 +1,15 @@
 <template>
-
-   <button 
-      class="bg-green-500 hover:bg-green-600 p-2 rounded text-white m-2"
-      @click="accion"
-
-   >{{ texto }}</button>
+   <button  class="font-bold" @click="accion" :disabled="desactivar">{{ texto }}</button>
 </template>
 
 <script>
 export default {
    props: {
-      texto: String
+      texto: String,
+      desactivar: {
+         type: Boolean,
+         default: false
+      }
    },
    data() {
       return {
